@@ -1,0 +1,67 @@
+{
+  "name": "@local/rimworld-log",
+  "version": "1.6.9",
+  "private": true,
+  "description": "Read-only RimWorld game-log analysis for RimCrow installations, plus a Combat Extended compatibility reference: a scan tool, the /rimlog command, a source picker under the composer, and COMBAT_EXTENDED.md.",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "Jzc1098 <193768968+Jzc1098@users.noreply.github.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jzc1098/rimworld-log-plugin.git"
+  },
+  "homepage": "https://github.com/Jzc1098/rimworld-log-plugin#readme",
+  "keywords": [
+    "rimworld",
+    "rimcrow",
+    "deepseek-harness",
+    "dsh",
+    "log-analysis",
+    "mod-debugging"
+  ],
+  "type": "module",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./COMBAT_EXTENDED.md": "./COMBAT_EXTENDED.md",
+    "./MIGRATION.md": "./MIGRATION.md"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "plugins",
+    "tools",
+    "icon.svg",
+    "COMBAT_EXTENDED.md",
+    "OPERATIONS.md",
+    "PORTING.md",
+    "MIGRATION.md",
+    "SOLVED-block-split.md",
+    "UI-SURFACE.md",
+    "CONTRIBUTING.md",
+    "RELEASE.md",
+    "安装说明.md",
+    "使用参考.md",
+    "块功能介绍.md",
+    "插件清单.md",
+    "templates",
+    "blocks.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "dependencies": {
+    "schemastery": "^3.18.0"
+  }
+}

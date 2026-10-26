@@ -1,0 +1,117 @@
+{
+  "_comment": [
+    "blocks.json 的 schema 样例。",
+    "",
+    "这个文件是给 tools/stamp-blocks.mjs 读写的登记表，不要手写 —— 手写的内容下次跑",
+    "stamp-blocks 时会被覆盖，而手改 hash 会让「块是否变过」这个判断失效。",
+    "",
+    "本文件只是带注释的样例，展示每个字段的含义，包括那几个可选的关系字段。",
+    "真正的 blocks.json 是紧凑 JSON，不含注释。"
+  ],
+
+  "schema": "rimworld-log.blocks",
+  "schemaVersion": 1,
+
+  "_pluginVersion": "撰写时 package.json 里声明的版本。仅供上下文，不参与任何判断。",
+  "pluginVersion": "1.1.0",
+
+  "generatedAt": "2026-10-12T00:00:00.000Z",
+
+  "authors": {
+    "_comment": "每个作者一个条目。counter 是流水号，stamp-blocks 每次署名递增。",
+    "lin": {
+      "display": "lin",
+      "firstSeen": "2026-10-12",
+      "counter": 7
+    }
+  },
+
+  "blocks": [
+    {
+      "_comment": "──────────────── 一个普通块 ────────────────",
+
+      "id": "tools/example.mjs:function:readDefs",
+      "_id_comment": "格式固定为 路径:类型:名字。类型取自切分器：function / class / const / let / var / def / h1..h6 / file。",
+
+      "file": "tools/example.mjs",
+      "kind": "function",
+      "name": "readDefs",
+
+      "hash": "sha256:9f2c1a4b7e3d5068",
+      "_hash_comment": "归一化内容（去 BOM、统一换行、去行尾空白、压缩空行）的 sha256 前 16 位。不要手改。",
+
+      "author": "lin",
+      "version": "1.1.0.lin.003",
+      "date": "2026-10-12",
+      "_provenance_comment": "首次署名。作者为 null 且 baseline 为 true 表示该块早于登记表建立。",
+
+      "modifiedBy": "wang",
+      "modifiedVersion": "1.2.0.wang.001",
+      "modifiedDate": "2026-10-20",
+      "modifiedCount": 1,
+      "_modified_comment": "内容后来被改过时写入。保留原始署名，这样「谁写的」与「谁最后改的」分得开。"
+    },
+
+    {
+      "_comment": "──────────────── 一个基线块（早于登记表）────────────────",
+
+      "id": "lib/parse.js:function:normalizeText",
+      "file": "lib/parse.js",
+      "kind": "function",
+      "name": "normalizeText",
+      "hash": "sha256:1122334455667788",
+
+      "author": null,
+      "version": null,
+      "date": null,
+      "baseline": true,
+      "note": "pre-dates the block registry; authorship not recorded",
+
+      "_baseline_comment": [
+        "首次生成登记表时，磁盘上已有的块全部记成这样。",
+        "这是事实，不是缺失：登记表是在它们写完之后才建立的。",
+        "想给某个块补署名：node tools/stamp-blocks.mjs --adopt"
+      ]
+    },
+
+    {
+      "_comment": "──────────────── 一个带关系声明的块 ────────────────",
+
+      "id": "tools/turret-queue.mjs:function:rewriteQueueScribe",
+      "file": "tools/turret-queue.mjs",
+      "kind": "function",
+      "name": "rewriteQueueScribe",
+      "hash": "sha256:aabbccddeeff0011",
+
+      "author": "lin",
+      "version": "1.1.0.lin.004",
+      "date": "2026-10-12",
+
+      "aliases": [
+        "tools/turret-queue.mjs:function:fixQueueScribe"
+      ],
+      "_aliases_comment": "本块的历史名字或位置。有了它，改名后比对仍能对齐，不会报成「删一个 + 加一个」。",
+
+      "supersedes": [
+        "tools/old-queue.mjs:function:patchQueueLookMode"
+      ],
+      "_supersedes_comment": "本块取代了哪些块。被取代者出现时，比对报告会把它列进「建议移除」。",
+
+      "variantOf": "tools/vanilla-queue.mjs:function:rewriteQueueScribe",
+      "_variantOf_comment": "本块是某个块的变体（例如 CE 版与原版各一份）。声明后允许共存，报告为「互补」而非「重复」。",
+
+      "conflictsWith": [
+        "tools/legacy-queue.mjs:function:patchQueueLookMode"
+      ],
+      "_conflictsWith_comment": "明确不能与哪些块共存。导入时报硬错误，不让人踩。"
+    }
+  ],
+
+  "_how_to_add_a_block": [
+    "不要手写。",
+    "1. 把代码写进磁盘上的文件。",
+    "2. 跑 node tools/stamp-blocks.mjs —— 新块自动获得署名与子版本号。",
+    "3. 若该块是改名、取代或变体，用编辑器在 blocks.json 里补上 aliases / supersedes / variantOf / conflictsWith。",
+    "   这四个字段 stamp-blocks 不会覆盖，可以放心手写。"
+  ]
+}

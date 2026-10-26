@@ -1,0 +1,13 @@
+- insert:
+    - id: rimworld-log
+      name: '@local/rimworld-log'
+      # 行配置：DSH 设置界面（设置 → RimWorld 日志分析）编辑的就是这些值。
+      # 留空的键走 settings.json / 探测 / 内置默认（优先级见 lib/config.js）。
+      config:
+        patchDir: ''
+        workspaceDir: ''
+        snapshotDir: ''
+        ignoredSignatures: []
+        clusterLimit: 14
+        defaultSource: realtime
+        language: zh

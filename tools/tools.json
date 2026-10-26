@@ -1,0 +1,6 @@
+[
+  { "name": "rimworld_log_scan", "purpose": "读日志：聚类错误/警告、按堆栈归属 mod、给出可回溯证据（analyze / detect / grep / mods，只读）" },
+  { "name": "rimworld_plugin_guide", "purpose": "插件自述：工具与命令清单、块清单、作者表、版本变化" },
+  { "name": "rimworld_plugin_compare", "purpose": "按块比对另一份插件副本，报告差异与按导入安全性排序的可学清单" },
+  { "name": "rimworld_workspace_archive", "purpose": "工作区备份：按天快照（保留最新 3 份）、导出迁移包、写归档记录与 INDEX" }
+]

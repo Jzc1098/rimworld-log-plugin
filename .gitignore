@@ -1,0 +1,20 @@
+# Dependency install output
+node_modules/
+pnpm-lock.yaml.bak
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build artifacts and local diagnostics
+dist/
+*.zip
+diag-brief.md
+*.log

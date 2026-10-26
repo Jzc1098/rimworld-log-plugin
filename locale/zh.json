@@ -1,0 +1,6 @@
+﻿{
+    "meta":  {
+                 "title":  "RimWorld 日志分析",
+                 "description":  "只读读取并预聚类 RimWorld 游戏日志（RimCrow 环境）；提供 rimworld_log_scan 工具、/rimlog 命令与可编辑的插件设置。"
+             }
+}

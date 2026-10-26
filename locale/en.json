@@ -1,0 +1,6 @@
+﻿{
+    "meta":  {
+                 "title":  "RimWorld Log Analysis",
+                 "description":  "Read-only reading and pre-clustering of RimWorld game logs for RimCrow installations; ships the rimworld_log_scan tool, the /rimlog command, and a configurable settings surface."
+             }
+}
