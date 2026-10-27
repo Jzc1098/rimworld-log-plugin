@@ -1,6 +1,6 @@
 {
   "name": "@local/rimworld-log",
-  "version": "1.6.10",
+  "version": "1.6.9",
   "private": true,
   "description": "Read-only RimWorld game-log analysis for RimCrow installations, plus a Combat Extended compatibility reference: a scan tool, the /rimlog command, a source picker under the composer, and COMBAT_EXTENDED.md.",
   "license": "PolyForm-Noncommercial-1.0.0",

@@ -1,14 +1,14 @@
 {
   "schema": "rimworld-log.blocks",
   "schemaVersion": 1,
-  "pluginVersion": "1.6.10",
-  "generatedAt": "2026-10-27T01:04:12.263Z",
+  "pluginVersion": "1.6.9",
+  "generatedAt": "2026-10-26T12:58:46.300Z",
   "note": "Sub-version format is <plugin version>.<author>.<running number>. The plugin version is recorded for context only and is never used to decide which side is newer.",
   "authors": {
     "Jzc1098": {
       "display": "Jzc1098",
       "firstSeen": "2026-10-12",
-      "counter": 931
+      "counter": 925
     }
   },
   "blocks": [
@@ -767,17 +767,6 @@
       "author": "Jzc1098",
       "version": "1.6.1.Jzc1098.366",
       "date": "2026-10-19"
-    },
-    {
-      "id": "HISTORY.md:h2:v1.6.10 — 开发中",
-      "file": "HISTORY.md",
-      "kind": "h2",
-      "name": "v1.6.10 — 开发中",
-      "hash": "sha256:6d2d19d55f0c729b",
-      "source": "created",
-      "author": "Jzc1098",
-      "version": "1.6.10.Jzc1098.926",
-      "date": "2026-10-27"
     },
     {
       "id": "HISTORY.md:h2:v1.6.2 — 2026-10-19",
@@ -5155,16 +5144,16 @@
       "file": "package.json",
       "kind": "json",
       "name": "(file)",
-      "hash": "sha256:2045d7460edc3e16",
+      "hash": "sha256:218463faa4556afc",
       "author": null,
       "version": null,
       "date": null,
       "baseline": true,
       "note": "pre-dates the block registry; authorship not recorded",
       "modifiedBy": "Jzc1098",
-      "modifiedVersion": "1.6.10.Jzc1098.927",
-      "modifiedDate": "2026-10-27",
-      "modifiedCount": 27
+      "modifiedVersion": "1.6.9.Jzc1098.920",
+      "modifiedDate": "2026-10-26",
+      "modifiedCount": 26
     },
     {
       "id": "plugins/feature-report.js:function:describeParameter",
@@ -16021,15 +16010,15 @@
       "file": "块功能介绍.md",
       "kind": "h2",
       "name": "三、一眼看全貌",
-      "hash": "sha256:b1eae896d61b9961",
+      "hash": "sha256:0d9e5ddbd52e902f",
       "source": "created",
       "author": "Jzc1098",
       "version": "1.6.1.Jzc1098.415",
       "date": "2026-10-19",
       "modifiedBy": "Jzc1098",
-      "modifiedVersion": "1.6.10.Jzc1098.929",
-      "modifiedDate": "2026-10-27",
-      "modifiedCount": 28
+      "modifiedVersion": "1.6.9.Jzc1098.923",
+      "modifiedDate": "2026-10-26",
+      "modifiedCount": 27
     },
     {
       "id": "块功能介绍.md:h2:九、一页速查",
@@ -16106,30 +16095,30 @@
       "file": "块功能介绍.md",
       "kind": "h2",
       "name": "四、按区域认识块群",
-      "hash": "sha256:9c631bb3ce5240a2",
+      "hash": "sha256:9623a026a8d00dd9",
       "source": "created",
       "author": "Jzc1098",
       "version": "1.6.1.Jzc1098.416",
       "date": "2026-10-19",
       "modifiedBy": "Jzc1098",
-      "modifiedVersion": "1.6.10.Jzc1098.930",
-      "modifiedDate": "2026-10-27",
-      "modifiedCount": 28
+      "modifiedVersion": "1.6.9.Jzc1098.924",
+      "modifiedDate": "2026-10-26",
+      "modifiedCount": 27
     },
     {
       "id": "块功能介绍.md:h2:附录：每个文件的块数",
       "file": "块功能介绍.md",
       "kind": "h2",
       "name": "附录：每个文件的块数",
-      "hash": "sha256:80786086b6f310f2",
+      "hash": "sha256:313f3a5d2582a583",
       "source": "created",
       "author": "Jzc1098",
       "version": "1.6.1.Jzc1098.426",
       "date": "2026-10-19",
       "modifiedBy": "Jzc1098",
-      "modifiedVersion": "1.6.10.Jzc1098.931",
-      "modifiedDate": "2026-10-27",
-      "modifiedCount": 28
+      "modifiedVersion": "1.6.9.Jzc1098.925",
+      "modifiedDate": "2026-10-26",
+      "modifiedCount": 27
     },
     {
       "id": "块功能介绍.md:h3:1. 别人那版有什么我没有",
@@ -16675,15 +16664,15 @@
       "file": "插件清单.md",
       "kind": "h2",
       "name": "二、运行必需（21 个）",
-      "hash": "sha256:d8311ff1a45bd6a6",
+      "hash": "sha256:0bf26ca93521a4fb",
       "source": "created",
       "author": "Jzc1098",
       "version": "1.6.6.Jzc1098.710",
       "date": "2026-10-26",
       "modifiedBy": "Jzc1098",
-      "modifiedVersion": "1.6.10.Jzc1098.928",
-      "modifiedDate": "2026-10-27",
-      "modifiedCount": 12
+      "modifiedVersion": "1.6.9.Jzc1098.922",
+      "modifiedDate": "2026-10-26",
+      "modifiedCount": 11
     },
     {
       "id": "插件清单.md:h2:五、调查工具（`tools/`，54 个，按需跑）",
